@@ -1,3 +1,4 @@
+// -------- SLIDESHOW DO BACKGROUND --------
 const slideshow = document.querySelector('.background-slideshow');
 
 const imagens = [
@@ -15,3 +16,30 @@ function trocarImagem() {
 
 trocarImagem(); // exibir a primeira
 setInterval(trocarImagem, 5000); // troca a cada 5 segundos
+
+// -------- GALERIA COM SCROLL E LOOP INFINITO --------
+const galeria = document.getElementById('galeria-container');
+
+// Duplicar imagens para simular loop infinito
+galeria.innerHTML += galeria.innerHTML;
+
+function scrollGaleria(direcao) {
+  const larguraImagem = 320; // 300px + 20px de gap
+  galeria.scrollBy({
+    left: direcao * larguraImagem,
+    behavior: 'smooth'
+  });
+}
+
+// Quando chegar no final ou início, reseta posição para parecer infinito
+galeria.addEventListener('scroll', () => {
+  const maxScroll = galeria.scrollWidth / 2;
+
+  if (galeria.scrollLeft >= maxScroll) {
+    galeria.scrollLeft = galeria.scrollLeft - maxScroll;
+  }
+
+  if (galeria.scrollLeft <= 0) {
+    galeria.scrollLeft = galeria.scrollLeft + maxScroll;
+  }
+});
