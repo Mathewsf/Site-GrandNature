@@ -7,6 +7,11 @@ body, html {
   position: relative;
 }
 
+h1, h2, p, nav a {
+  text-shadow: 1px 1px 2px black;
+}
+
+
 .background-slideshow {
   position: fixed;
   top: 0;
@@ -46,6 +51,19 @@ nav a {
 
 section {
   padding: 40px 20px;
+}
+
+#sobre {
+    text-align: center;
+}
+
+section#galeria {
+  background-color: rgba(0, 0, 0, 0.6); /* fundo escuro sem esconder o fundo */
+  padding: 40px 20px;
+  border-radius: 8px;
+  margin: 20px;
+  color: white;
+  text-align: center;
 }
 
 .galeria-wrapper {
@@ -100,6 +118,25 @@ section {
 .seta.direita {
   right: 10px;
 }
+
+#localizacao {
+  margin: 40px auto;
+  padding: 20px;
+  background-color: rgba(138, 137, 137, 0.9);
+  border-radius: 8px;
+  text-align: center;
+}
+
+.mapa-container {
+  overflow: hidden;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1200px;
+}
+
+
 footer {
   text-align: center;
   padding: 20px;
