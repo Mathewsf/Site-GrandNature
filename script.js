@@ -32,14 +32,4 @@ function scrollGaleria(direcao) {
 }
 
 // Quando chegar no final ou início, reseta posição para parecer infinito
-galeria.addEventListener('scroll', () => {
-  const maxScroll = galeria.scrollWidth / 2;
 
-  if (galeria.scrollLeft >= maxScroll) {
-    galeria.scrollLeft = galeria.scrollLeft - maxScroll;
-  }
-
-  if (galeria.scrollLeft <= 0) {
-    galeria.scrollLeft = galeria.scrollLeft + maxScroll;
-  }
-});
