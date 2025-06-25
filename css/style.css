@@ -180,6 +180,11 @@ img {
   font-weight: 600;
   text-shadow: none;
   text-align: left;
+  transition: transform 0.3s ease;
+}
+
+.avaliacao:hover {
+  transform: scale(1.1);
 }
 
 .avaliacao p {
