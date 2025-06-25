@@ -81,10 +81,22 @@ section#galeria {
   scroll-behavior: smooth;
   gap: 20px;
   padding: 20px 0;
-
   scrollbar-width: none; /* Firefox */
   -ms-overflow-style: none; /* IE */
 }
+
+#galeria {
+  animation: zoomIn 0.6s ease forwards;
+}
+
+
+img {
+      transition: transform 0.3s ease;
+    }
+
+    img:hover {
+      transform: scale(1.1);
+    }
 
 .galeria-horizontal::-webkit-scrollbar {
   display: none; /* Chrome */
@@ -239,5 +251,17 @@ footer {
   }
   50% {
     transform: translateY(-10px);
+  }
+}
+
+@keyframes zoomIn {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
   }
 }
