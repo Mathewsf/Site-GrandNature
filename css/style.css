@@ -31,6 +31,10 @@ h1, h2, p, nav a {
   padding-bottom: 50px;
 }
 
+.contato {
+  text-decoration: none;
+}
+
 header {
   text-align: center;
   padding: 60px 20px;
