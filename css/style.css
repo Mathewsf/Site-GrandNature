@@ -54,7 +54,9 @@ nav a {
 
 header {
   text-align: center;
-  padding: 60px 20px;
+  padding: 40px 0px;
+  background-color: #2c4434;
+  font-size: 20px;
 }
 
 nav {
@@ -76,7 +78,13 @@ section {
 }
 
 #sobre {
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  /* tela cheia */
+  padding: 0px;
+  box-sizing: border-box;
 }
 
 section#galeria {
@@ -240,19 +248,37 @@ img:hover {
 }
 
 .texto-formatado {
-  white-space: pre-line;
-  font-size: 18px;
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-  color: #fff;
-  /* ajuste conforme o fundo */
-  padding: 20px;
-  background-color: rgba(0, 0, 0, 0.6);
-  /* fundo sutil para contraste */
+  background-color: rgba(0, 0, 0, 0.7);
+  /* fundo escuro com transparência */
+  color: white;
+  padding: 40px;
   border-radius: 10px;
+  width: 100%;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+}
+
+.texto-formatado h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.botao-whatsapp {
+  margin-top: 30px;
+  background-color: #2c4434;
+  color: white;
+  border: none;
+  padding: 15px 25px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.texto-conteudo {
   max-width: 800px;
-  margin: 0 auto;
-  text-align: left;
+  color: #fff;
 }
 
 .whatsapp-float {
@@ -470,6 +496,18 @@ footer {
     line-height: 1.5;
     width: 100%;
     max-width: 100%;
+  }
+
+  .botao-whatsapp {
+    margin-top: 40px;
+    background-color: #2c4434;
+    color: white;
+    border: none;
+    padding: 15px 25px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
   }
 
   #depoimentos {
