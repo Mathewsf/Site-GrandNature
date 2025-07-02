@@ -24,7 +24,7 @@ const galeria = document.getElementById('galeria-container');
 galeria.innerHTML += galeria.innerHTML;
 
 function scrollGaleria(direcao) {
-  const larguraImagem = 320; // 300px + 20px de gap
+  const larguraImagem = window.innerWidth <= 480 ? 220 : (window.innerWidth <= 768 ? 270 : 320); // Ajuste responsivo
   galeria.scrollBy({
     left: direcao * larguraImagem,
     behavior: 'smooth'
