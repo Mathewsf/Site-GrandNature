@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Grand Nature Eventos</title>
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" type="image/png" href="imgs/logo-grandnature.png">
+
 </head>
 
 <body>
@@ -46,7 +48,11 @@
       <div class="container">
         <div class="historia-content">
           <div class="historia-image">
-            <img src="imgs/img2bck.jpeg" alt="Interior rústico da Grand Nature">
+            <img id="sliderImage" src="imgs/img2bck.jpeg" alt="Interior rústico da Grand Nature">
+            <div class="slider-buttons">
+              <button onclick="prevImage()">⟨</button>
+              <button onclick="nextImage()">⟩</button>
+            </div>
           </div>
           <div class="historia-text">
             <h1>Nossa História</h1>
@@ -213,7 +219,7 @@
         <h1 class="main-title">Venha conhecer nossos espaços pessoalmente!</h1>
         <p class="description">Entre em contato hoje mesmo para agendar sua visita ou solicitar um orçamento. Seu espaço
           para eventos em Goiânia espera por você!</p>
-        <a href="https://wa.me/556240166600" class="contact-button">
+        <a href="https://wa.me/556240166600" target="_blank" class="contact-button">
           ENTRE EM CONTATO CONOSCO
         </a>
       </div>

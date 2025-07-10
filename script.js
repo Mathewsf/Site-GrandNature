@@ -2,7 +2,7 @@
 const slideshow = document.querySelector('.background-slideshow');
 
 const imagens = [
-  'imgs/img1bck.jpeg',
+  'imgs/img01bck.jpg',
   'imgs/img2bck.jpeg',
   'imgs/img3bck.jpeg'
 ];
@@ -31,5 +31,36 @@ function scrollGaleria(direcao) {
   });
 }
 
+
+const images = [
+    "imgs/img1bck.jpeg",
+    "imgs/img3bck.jpeg",
+    "imgs/galeria5.jpeg"
+  ];
+
+  let currentIndex = 0;
+  const imgElement = document.getElementById("sliderImage");
+
+  function showImage(index) {
+    if (index >= images.length) index = 0;
+    if (index < 0) index = images.length - 1;
+    currentIndex = index;
+    imgElement.src = images[currentIndex];
+  }
+
+  function nextImage() {
+    showImage(currentIndex + 1);
+  }
+
+  function prevImage() {
+    showImage(currentIndex - 1);
+  }
+
+  // opcional: troca automática a cada 5 segundos
+  setInterval(nextImage, 5000);
+
 // Quando chegar no final ou início, reseta posição para parecer infinito
+
+
+
 

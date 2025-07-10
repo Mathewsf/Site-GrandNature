@@ -7,7 +7,7 @@ html {
   color: #fff;
   position: relative;
   overflow-x: hidden;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0);
 }
 
 *,
@@ -128,10 +128,33 @@ section#galeria {
   /* IE */
 }
 
+.slider-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  gap: 15px;
+}
+
+.slider-buttons button {
+  background-color: #36473a;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.slider-buttons button:hover {
+  background-color: #2c4434;
+  transform: scale(1.1);
+}
+
+
 #galeria {
   animation: zoomIn 0.6s ease forwards;
 }
-
 
 img {
   transition: transform 0.3s ease;
