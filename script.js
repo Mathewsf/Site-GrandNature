@@ -3,8 +3,9 @@ const slideshow = document.querySelector('.background-slideshow');
 
 const imagens = [
   'imgs/img01bck.jpg',
-  'imgs/img2bck.jpeg',
-  'imgs/img3bck.jpeg'
+  'imgs/img02bck.jpeg',
+  'imgs/img03bck.jpeg',
+  'imgs/img04bck.jpeg'
 ];
 
 let index = 0;
@@ -33,9 +34,9 @@ function scrollGaleria(direcao) {
 
 
 const images = [
-    "imgs/img1bck.jpeg",
-    "imgs/img3bck.jpeg",
-    "imgs/galeria5.jpeg"
+    "imgs/img-historia01.png",
+    "imgs/img-historia02.png",
+    "imgs/img-historia03.png"
   ];
 
   let currentIndex = 0;
